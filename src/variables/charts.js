@@ -96,7 +96,7 @@ let chartExample1 = {
       ],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Patients",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -110,7 +110,7 @@ let chartExample1 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [100, 70, 90, 70, 85, 60, 75, 60, 90, 80, 110, 100],
+          data: [978, 1254, 340, 1102, 890, 133, 654, 1245, 999, 778, 387, 289],
         },
       ],
     };
@@ -225,7 +225,7 @@ let chartExample2 = {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
       datasets: [
         {
-          label: "Data",
+          label: "Units in $100s",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#1f8ef1",
@@ -261,10 +261,10 @@ let chartExample3 = {
     gradientStroke.addColorStop(0, "rgba(119,52,169,0)"); //purple colors
 
     return {
-      labels: ["USA", "GER", "AUS", "UK", "RO", "BR"],
+      labels: ["18-29", "30-49", "50-69", "70-89", "90+"],
       datasets: [
         {
-          label: "Countries",
+          label: "Age Group",
           fill: true,
           backgroundColor: gradientStroke,
           hoverBackgroundColor: gradientStroke,
@@ -272,7 +272,7 @@ let chartExample3 = {
           borderWidth: 2,
           borderDash: [],
           borderDashOffset: 0.0,
-          data: [53, 20, 10, 80, 100, 45],
+          data: [97, 89, 74, 78, 84, 45],
         },
       ],
     };
@@ -339,7 +339,7 @@ const chartExample4 = {
       labels: ["JUL", "AUG", "SEP", "OCT", "NOV"],
       datasets: [
         {
-          label: "My First dataset",
+          label: "Monthly Cash",
           fill: true,
           backgroundColor: gradientStroke,
           borderColor: "#00d6b4",
@@ -353,7 +353,7 @@ const chartExample4 = {
           pointHoverRadius: 4,
           pointHoverBorderWidth: 15,
           pointRadius: 4,
-          data: [90, 27, 60, 12, 80],
+          data: [10000, 12000, 8000, 15000, 11000],
         },
       ],
     };

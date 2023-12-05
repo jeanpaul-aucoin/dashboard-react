@@ -141,7 +141,7 @@ function AdminNavbar(props) {
         toggle={toggleModalSearch}
       >
         <ModalHeader>
-          <Input placeholder="SEARCH" type="text" />
+          <Input placeholder="QuickSight Search" type="text" />
           <button
             aria-label="Close"
             className="close"

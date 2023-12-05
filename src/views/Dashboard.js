@@ -64,8 +64,9 @@ function Dashboard(props) {
               <CardHeader>
                 <Row>
                   <Col className="text-left" sm="6">
-                    <h5 className="card-category">Financials</h5>
-                    <CardTitle tag="h2">Payments Received</CardTitle>
+                    <h5 className="card-category">Health Clinic X</h5>
+                    <CardTitle tag="h2"><i className="tim-icons icon-single-02 text-info" />{" "}
+                  13,247 Visits</CardTitle>
                   </Col>
                   <Col sm="6">
                     <ButtonGroup
@@ -83,7 +84,7 @@ function Dashboard(props) {
                         onClick={() => setBgChartData("data1")}
                       >
                         <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Accounts
+                          Patients
                         </span>
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-single-02" />
@@ -100,7 +101,7 @@ function Dashboard(props) {
                         onClick={() => setBgChartData("data2")}
                       >
                         <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Purchases
+                          Compliance
                         </span>
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-gift-2" />
@@ -117,7 +118,7 @@ function Dashboard(props) {
                         onClick={() => setBgChartData("data3")}
                       >
                         <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                          Sessions
+                          Costs
                         </span>
                         <span className="d-block d-sm-none">
                           <i className="tim-icons icon-tap-02" />
@@ -142,9 +143,9 @@ function Dashboard(props) {
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Patient Visits</h5>
+                <h5 className="card-category">Payments Received</h5>
                 <CardTitle tag="h3">
-                  <i className="tim-icons icon-bell-55 text-info" /> 2,231
+                  <i className="tim-icons icon-money-coins text-info" /> 6,623
                 </CardTitle>
               </CardHeader>
               <CardBody>
@@ -160,10 +161,10 @@ function Dashboard(props) {
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Daily Sales</h5>
+                <h5 className="card-category">Health Compliance Rates</h5>
                 <CardTitle tag="h3">
-                  <i className="tim-icons icon-delivery-fast text-primary" />{" "}
-                  3,500€
+                  <i className="tim-icons icon-heart-2 text-primary" />{" "}
+                  84%
                 </CardTitle>
               </CardHeader>
               <CardBody>
@@ -179,9 +180,9 @@ function Dashboard(props) {
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Completed Tasks</h5>
+                <h5 className="card-category">Operating Cash Flow</h5>
                 <CardTitle tag="h3">
-                  <i className="tim-icons icon-send text-success" /> 12,100K
+                  <i className="tim-icons icon-paper text-success" /> Avg $11,200
                 </CardTitle>
               </CardHeader>
               <CardBody>
