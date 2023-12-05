@@ -22,13 +22,13 @@ import PerfectScrollbar from "perfect-scrollbar";
 
 // core components
 import AdminNavbar from "components/Navbars/AdminNavbar.js";
-import Footer from "components/Footer/Footer.js";
+//import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
 import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routes from "routes.js";
 
-import logo from "assets/img/react-logo.png";
+import ghlogo from "assets/img/github-logo.png";
 import { BackgroundColorContext } from "contexts/BackgroundColorContext";
 
 var ps;
@@ -105,9 +105,9 @@ function Admin(props) {
             <Sidebar
               routes={routes}
               logo={{
-                outterLink: "https://www.creative-tim.com/",
-                text: "Creative Tim",
-                imgSrc: logo,
+                outterLink: "https://github.com/jeanpaul-aucoin/dashboard-react",
+                text: "Population Health",
+                imgSrc: ghlogo,
               }}
               toggleSidebar={toggleSidebar}
             />
@@ -124,10 +124,7 @@ function Admin(props) {
                   element={<Navigate to="/admin/dashboard" replace />}
                 />
               </Routes>
-              {
-                // we don't want the Footer to be rendered on map page
-                location.pathname === "/admin/maps" ? null : <Footer fluid />
-              }
+              {/* we can add footer in future here if wanted/needed */}
             </div>
           </div>
           <FixedPlugin bgColor={color} handleBgClick={changeColor} />

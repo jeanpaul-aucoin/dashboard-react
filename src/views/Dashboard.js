@@ -64,8 +64,8 @@ function Dashboard(props) {
               <CardHeader>
                 <Row>
                   <Col className="text-left" sm="6">
-                    <h5 className="card-category">Total Shipments</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
+                    <h5 className="card-category">Financials</h5>
+                    <CardTitle tag="h2">Payments Received</CardTitle>
                   </Col>
                   <Col sm="6">
                     <ButtonGroup
@@ -142,9 +142,9 @@ function Dashboard(props) {
           <Col lg="4">
             <Card className="card-chart">
               <CardHeader>
-                <h5 className="card-category">Total Shipments</h5>
+                <h5 className="card-category">Patient Visits</h5>
                 <CardTitle tag="h3">
-                  <i className="tim-icons icon-bell-55 text-info" /> 763,215
+                  <i className="tim-icons icon-bell-55 text-info" /> 2,231
                 </CardTitle>
               </CardHeader>
               <CardBody>
